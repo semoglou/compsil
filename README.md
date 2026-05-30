@@ -30,7 +30,7 @@ The standard Silhouette coefficient is one of the most widely used internal vali
 
 A natural alternative is **macro-averaging**, where Silhouette values are first averaged within each cluster and then averaged across clusters. This gives every cluster equal influence, reducing the dominance of majority groups. However, macro-averaging can also overemphasize small, noisy, or under-represented clusters.
 
-<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/agg.png" alt="Micro vs Macro Silhouette Aggregation" width="650">
+<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/agg.png" alt="Micro vs Macro Silhouette Aggregation" width="700">
 
 These complementary failure modes create a practical dilemma:
 
@@ -58,7 +58,7 @@ Composite Silhouette evaluates candidate numbers of clusters through repeated su
 
 7. Averages the composite scores across subsamples.
 
-<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/smm.png" alt="Composite Silhouette pipeline" width="700">
+<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/smm.png" alt="Composite Silhouette pipeline" width="800">
 
 For each subsample, Composite Silhouette combines the two views as:
 
