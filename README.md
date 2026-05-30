@@ -30,7 +30,7 @@ The standard Silhouette coefficient is one of the most widely used internal vali
 
 A natural alternative is **macro-averaging**, where Silhouette values are first averaged within each cluster and then averaged across clusters. This gives every cluster equal influence, reducing the dominance of majority groups. However, macro-averaging can also overemphasize small, noisy, or under-represented clusters.
 
-<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/agg.png" alt="Micro vs Macro Silhouette Aggregation" width="800">
+<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/agg.png" alt="Micro vs Macro Silhouette Aggregation" width="600">
 
 These complementary failure modes create a practical dilemma:
 
@@ -95,37 +95,26 @@ Semoglou, A., Likas, A., & Pavlopoulos, J. (2026). Composite Silhouette.
 Accepted at *ECML PKDD 2026*.
 
 ```bibtex
-
 @inproceedings{semoglou2026composite,
-
   title     = {Composite Silhouette},
-
   author    = {Semoglou, Aggelos and Likas, Aristidis and Pavlopoulos, John},
-
   booktitle = {Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases},
-
   year      = {2026}
-
 }
-
 ```
 
 ## Installation
 
 Install **CompSil** from [PyPI](https://pypi.org/project/compsil/):
 
-```bash
-
+```python
 pip install compsil
-
 ```
 
 Import the main class in Python as:
 
 ```python
-
 from compsil import CompSil
-
 ```
 
 ## API Reference
@@ -139,27 +128,18 @@ CompSil provides a simple class-based interface for evaluating Composite Silhoue
 Computes Composite Silhouette scores for candidate cluster counts using repeated subsampled KMeans clusterings.
 
 ```python
-
 CompSil(
 
     data,
-
     ground_truth=None,
-
     k_values=range(2, 11),
-
     num_samples=10,
-
     sample_size="auto",
-
     random_state=42,
-
     n_jobs=-1,
-
     eps=1e-12,
 
 )
-
 ```
 
 **Inputs**
@@ -211,41 +191,27 @@ CompSil(
 Evaluates Composite Silhouette over all candidate values of `k`.
 
 ```python
-
 model.evaluate()
-
 ```
 
 After calling `evaluate`, the results are stored in:
 
 ```python
-
 model.results_df
-
 ```
 
 The results table contains:
 
 - `k`: candidate number of clusters.
-
 - `avg S_micro`: average micro-averaged Silhouette across subsamples.
-
 - `avg S_macro`: average macro-averaged Silhouette across subsamples.
-
 - `w_micro`: average adaptive weight assigned to the micro view.
-
 - `S_mM`: Composite Silhouette score.
-
 - `std S_mM`: standard deviation of subsample-level composite scores.
-
 - `se S_mM`: standard error of the Composite Silhouette estimate.
-
 - `LCB S_mM`: lower-confidence-bound score, computed as `S_mM - se S_mM`.
-
 - `B_eff`: number of valid subsampling trials.
-
 - `sample_size`: resolved subsample size.
-
 - `sample_fraction`: resolved subsample fraction.
 
 ---
@@ -255,9 +221,7 @@ The results table contains:
 Returns the selected number of clusters.
 
 ```python
-
 model.get_optimal_k(use_lcb=False)
-
 ```
 
 **Inputs**
@@ -281,9 +245,7 @@ model.get_optimal_k(use_lcb=False)
 Returns the results as a pandas DataFrame indexed by `k`.
 
 ```python
-
 results = model.get_results_dataframe()
-
 ```
 
 **Returns**
@@ -299,9 +261,7 @@ results = model.get_results_dataframe()
 Plots the Composite Silhouette curve together with the subsample-averaged micro- and macro-averaged Silhouette curves.
 
 ```python
-
 model.plot_results()
-
 ```
 
 If `ground_truth` was provided, it is shown as a vertical reference line.
@@ -318,11 +278,7 @@ This project is licensed under the [MIT License](https://github.com/semoglou/com
 ## Links
 
 - Repository: [GitHub](https://github.com/semoglou/compsil)
-
 - Package: [PyPI](https://pypi.org/project/compsil/)
-
 - Paper: Accepted at ECML PKDD 2026
-
-- Preprint: Coming soon
-
+- Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
 - DOI: Coming soon
