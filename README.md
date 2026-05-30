@@ -30,7 +30,7 @@ The standard Silhouette coefficient is one of the most widely used internal vali
 
 A natural alternative is **macro-averaging**, where Silhouette values are first averaged within each cluster and then averaged across clusters. This gives every cluster equal influence, reducing the dominance of majority groups. However, macro-averaging can also overemphasize small, noisy, or under-represented clusters.
 
-<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/agg.png" alt="Micro vs Macro Silhouette Aggregation" width="600">
+<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/agg.png" alt="Micro vs Macro Silhouette Aggregation" width="650">
 
 These complementary failure modes create a practical dilemma:
 
@@ -277,7 +277,6 @@ This project is licensed under the [MIT License](https://github.com/semoglou/com
 
 ## Links
 
-- Repository: [GitHub](https://github.com/semoglou/compsil)
 - Package: [PyPI](https://pypi.org/project/compsil/)
 - Paper: Accepted at ECML PKDD 2026
 - Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
