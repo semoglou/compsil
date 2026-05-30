@@ -157,15 +157,11 @@ CompSil(
 
 - `sample_size`: int, float, None, or `"auto"`, default `"auto"`  
   Subsample size used in each repeated clustering.
-
   - If `int`, it is interpreted as the absolute subsample size.
-
   - If `float` in `(0, 1]`, it is interpreted as a fraction of the dataset size.
-
   - If `None` or `"auto"`, the subsample size is selected automatically from the dataset size and the largest candidate value of `k`.
 
 - `random_state`: int, default `42`  
-
   Base random seed used for reproducible subsampling and clustering.
 
 - `n_jobs`: int, default `-1`  
