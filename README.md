@@ -16,8 +16,6 @@
 
 **Composite Silhouette**  
 
-Aggelos Semoglou, Aristidis Likas, and John Pavlopoulos
-
 </td>
 </tr>
 </table>
