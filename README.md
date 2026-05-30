@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://pypi.org/project/compsil/"><img src="https://img.shields.io/pypi/v/compsil.svg?color=blue" alt="PyPI version"></a>&nbsp;&nbsp;
-  <a href="https://pypi.org/project/compsil/"><img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="Python 3.8+"></a>&nbsp;&nbsp;
+  <a href="https://pypi.org/project/compsil/"><img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python 3.9+"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="License: MIT"></a>&nbsp;&nbsp;
   <a href="https://pepy.tech/project/compsil"><img src="https://pepy.tech/badge/compsil" alt="Downloads"></a>&nbsp;&nbsp;
   <a href="#"><img src="https://img.shields.io/badge/ECML%20PKDD-2026-green" alt="ECML PKDD 2026"></a>
