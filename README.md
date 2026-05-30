@@ -298,6 +298,30 @@ model.plot_results()
 
 The `S_mM` column in the results table contains the Composite Silhouette score for each candidate number of clusters. The selected number of clusters is the value of `k` that maximizes `S_mM`.
 
+CompSil can also be used to evaluate a single candidate number of clusters. In this case, pass an integer to `k_values`.
+
+```python
+# Evaluate a single candidate k
+model = CompSil(
+    data=X,
+    k_values=5,
+    num_samples=30,
+    sample_size="auto",
+    random_state=42
+)
+
+model.evaluate()
+
+# Composite Silhouette score for k=5
+print("Composite Silhouette score:", model.score_)
+
+# Full results table
+results = model.get_results_dataframe()
+print(results)
+```
+
+When a single value of `k` is evaluated, `model.score_` stores the corresponding Composite Silhouette score.
+
 ## Acknowledgments
 This work was supported by [_Archimedes Research Unit_](https://archimedesai.gr/), [_Athena Research Center_](https://www.athenarc.gr/en).
 
