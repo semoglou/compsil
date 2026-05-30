@@ -261,8 +261,8 @@ from compsil import CompSil
 X, y = make_blobs(
     n_samples=1000,
     centers=5,
-    n_features=2,
-    cluster_std=0.7,
+    n_features=10,
+    cluster_std=1.5,
     random_state=42,
 )
 
@@ -274,9 +274,9 @@ model = CompSil(
     data=X,
     ground_truth=5,
     k_values=range(2, 11),
-    num_samples=30,
+    num_samples=10,
     sample_size="auto",
-    random_state=42,
+    random_state=0,
     n_jobs=-1,
 )
 
