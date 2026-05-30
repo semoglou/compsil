@@ -58,7 +58,7 @@ Composite Silhouette evaluates candidate numbers of clusters through repeated su
 
 7. Averages the composite scores across subsamples.
 
-<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/smmp.png" alt="Composite Silhouette pipeline" width="800">
+<img src="https://raw.githubusercontent.com/semoglou/compsil/main/figs/smmp.png" alt="Composite Silhouette pipeline" width="700">
 
 For each subsample, Composite Silhouette combines the two views as:
 
