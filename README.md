@@ -125,11 +125,10 @@ CompSil provides a simple class-based interface for evaluating Composite Silhoue
 
 #### `CompSil`
 
-Computes Composite Silhouette scores for candidate cluster counts using repeated subsampled KMeans clusterings.
+Computes Composite Silhouette for candidate cluster counts using repeated subsampled clusterings.
 
 ```python
 CompSil(
-
     data,
     ground_truth=None,
     k_values=range(2, 11),
@@ -138,32 +137,25 @@ CompSil(
     random_state=42,
     n_jobs=-1,
     eps=1e-12,
-
 )
 ```
 
 **Inputs**
 
 - `data`: array-like of shape `(n_samples, n_features)`  
-
   Input data matrix.
 
 - `ground_truth`: int or None, default `None`  
-
   Optional reference number of clusters.  
-
   Used only for visualization.
 
 - `k_values`: iterable of int or int, default `range(2, 11)`  
-
   Candidate number or candidate numbers of clusters to evaluate.
 
 - `num_samples`: int, default `10`  
-
   Number of subsamples used for each candidate value of `k`.
 
 - `sample_size`: int, float, None, or `"auto"`, default `"auto"`  
-
   Subsample size used in each repeated clustering.
 
   - If `int`, it is interpreted as the absolute subsample size.
@@ -177,11 +169,9 @@ CompSil(
   Base random seed used for reproducible subsampling and clustering.
 
 - `n_jobs`: int, default `-1`  
-
   Number of parallel jobs used during evaluation.
 
 - `eps`: float, default `1e-12`  
-
   Numerical stability constant used when normalizing micro–macro discrepancies.
 
 ---
@@ -227,15 +217,12 @@ model.get_optimal_k(use_lcb=False)
 **Inputs**
 
 - `use_lcb`: bool, default `False`  
-
   If `False`, selects the `k` that maximizes `S_mM`.  
-
   If `True`, selects the `k` that maximizes `LCB S_mM`.
 
 **Returns**
 
 - `optimal_k`: int  
-
   Selected number of clusters.
 
 ---
@@ -251,7 +238,6 @@ results = model.get_results_dataframe()
 **Returns**
 
 - `results`: pandas DataFrame  
-
   Table containing the Composite Silhouette results for all candidate values of `k`.
 
 ---
@@ -268,15 +254,12 @@ If `ground_truth` was provided, it is shown as a vertical reference line.
 
 
 ## Acknowledgments
-
-This work was partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0, funded by the European Union under the NextGenerationEU Program.
+This work was supported by [_Archimedes Research Unit_](https://archimedesai.gr/), [_Athena Research Center_](https://www.athenarc.gr/en).
 
 ## License
-
 This project is licensed under the [MIT License](https://github.com/semoglou/compsil/blob/main/LICENSE).
 
 ## Links
-
 - Package: [PyPI](https://pypi.org/project/compsil/)
 - Paper: Accepted at ECML PKDD 2026
 - Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
