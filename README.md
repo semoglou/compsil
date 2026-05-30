@@ -248,6 +248,55 @@ model.plot_results()
 
 If `ground_truth` was provided, it is shown as a vertical reference line.
 
+## Quick Start
+
+This example creates a simple synthetic dataset with five Gaussian clusters, evaluates candidate values of `k`, and selects the number of clusters using Composite Silhouette.
+
+```python
+from sklearn.datasets import make_blobs
+from sklearn.preprocessing import StandardScaler
+from compsil import CompSil
+
+# Create a simple synthetic dataset
+X, y = make_blobs(
+    n_samples=1000,
+    centers=5,
+    n_features=2,
+    cluster_std=0.7,
+    random_state=42,
+)
+
+# Standardize the data
+X = StandardScaler().fit_transform(X)
+
+# Initialize Composite Silhouette
+model = CompSil(
+    data=X,
+    ground_truth=5,
+    k_values=range(2, 11),
+    num_samples=30,
+    sample_size="auto",
+    random_state=42,
+    n_jobs=-1,
+)
+
+# Evaluate all candidate k values
+model.evaluate()
+
+# Select the number of clusters
+best_k = model.get_optimal_k()
+
+print("Selected k:", best_k)
+
+# Inspect the full results table
+results = model.get_results_dataframe()
+print(results)
+
+# Plot the Composite Silhouette curve
+model.plot_results()
+```
+
+The `S_mM` column in the results table contains the Composite Silhouette score for each candidate number of clusters. The selected number of clusters is the value of `k` that maximizes `S_mM`.
 
 ## Acknowledgments
 This work was supported by [_Archimedes Research Unit_](https://archimedesai.gr/), [_Athena Research Center_](https://www.athenarc.gr/en).
@@ -258,5 +307,5 @@ This project is licensed under the [MIT License](https://github.com/semoglou/com
 ## Links
 - Package: [PyPI](https://pypi.org/project/compsil/)
 - Paper: Accepted at ECML PKDD 2026
-- Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
 - DOI: Coming soon
+- Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
