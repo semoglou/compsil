@@ -30,7 +30,7 @@ The standard Silhouette coefficient is one of the most widely used internal vali
 
 A natural alternative is **macro-averaging**, where Silhouette values are first averaged within each cluster and then averaged across clusters. This gives every cluster equal influence, reducing the dominance of majority groups. However, macro-averaging can also overemphasize small, noisy, or under-represented clusters.
 
-The distinction between micro- and macro-averaged Silhouette aggregation is discussed in detail in **Revisiting Silhouette Aggregation** by Pavlopoulos, Vardakas, and Likas. The corresponding repository is available here: [https://github.com/ipavlopoulos/revisiting-silhouette-aggregation](https://github.com/ipavlopoulos/revisiting-silhouette-aggregation).
+The distinction between micro- and macro-averaged Silhouette aggregation is discussed in detail in [**Revisiting Silhouette Aggregation**](https://arxiv.org/abs/2401.05831) by Pavlopoulos, Vardakas, and Likas. The corresponding repository is available here: [https://github.com/ipavlopoulos/revisiting-silhouette-aggregation](https://github.com/ipavlopoulos/revisiting-silhouette-aggregation).
 
 For users who only need direct Silhouette computation, including sample-level, micro-averaged, and macro-averaged Silhouette scores with or without approximation, see the companion Silhouette package: [https://github.com/semoglou/sil_score](https://github.com/semoglou/sil_score).
 
