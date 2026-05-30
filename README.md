@@ -103,6 +103,8 @@ Accepted at *ECML PKDD 2026*.
 }
 ```
 
+The preprint is also available on arXiv: [https://arxiv.org/abs/2604.13816](https://arxiv.org/abs/2604.13816)
+
 ## Installation
 
 Install **CompSil** from [PyPI](https://pypi.org/project/compsil/):
