@@ -304,10 +304,7 @@ CompSil can also be used to evaluate a single candidate number of clusters. In t
 # Evaluate a single candidate k
 model = CompSil(
     data=X,
-    k_values=5,
-    num_samples=30,
-    sample_size="auto",
-    random_state=42
+    k_values=5
 )
 
 model.evaluate()
