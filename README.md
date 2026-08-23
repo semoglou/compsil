@@ -329,6 +329,13 @@ When a single value of `k` is evaluated, `model.score_` stores the corresponding
 ## Acknowledgments
 This work was supported by [_Archimedes Research Unit_](https://archimedesai.gr/), [_Athena Research Center_](https://www.athenarc.gr/en).
 
+<br>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/semoglou/cake/main/logos/AthenaRC_Archimedes_Unit_Logo_EN_Standard_Colour.png" alt="Athena Research Center and Archimedes Research Unit" width="250">
+</p>
+
+
 ## License
 This project is licensed under the [MIT License](https://github.com/semoglou/compsil/blob/main/LICENSE).
 
