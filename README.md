@@ -13,8 +13,9 @@
 <td>
 
 📄 **Accepted at _ECML PKDD 2026_**  
-
 **Composite Silhouette**  
+[European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases](ECML_PKDD_2026_LINK)  
+[Preprint](https://arxiv.org/abs/2604.13816) · [Presentation](https://github.com/semoglou/compsil/blob/main/supplementary%20material/presentation.pdf)
 
 </td>
 </tr>
@@ -336,3 +337,4 @@ This project is licensed under the [MIT License](https://github.com/semoglou/com
 - Paper: Accepted at ECML PKDD 2026
 - DOI: Coming soon
 - Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
+- Presentation: [ECML PKDD 2026](https://github.com/semoglou/compsil/blob/main/supplementary%20material/presentation.pdf)
