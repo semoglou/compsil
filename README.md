@@ -13,8 +13,7 @@
 <td>
 
 📄 **Accepted at _ECML PKDD 2026_**  
-**Composite Silhouette**  
-[European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases](ECML_PKDD_2026_LINK)  
+[European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases](https://ecmlpkdd.org/2026/), Naples, Italy · September 7–11, 2026 
 [Preprint](https://arxiv.org/abs/2604.13816) · [Presentation](https://github.com/semoglou/compsil/blob/main/supplementary%20material/presentation.pdf)
 
 </td>
