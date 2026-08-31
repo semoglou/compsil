@@ -15,6 +15,7 @@
 📄 **Accepted at _ECML PKDD 2026_**  
 [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases](https://ecmlpkdd.org/2026/)  
 [University of Naples Federico II](https://www.unina.it/), Naples, Italy · September 7–11, 2026  
+DOI: [https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38](https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38)   
 Presentation: [Slides](https://github.com/semoglou/compsil/blob/main/supplementary%20material/presentation.pdf)
 
 </td>
