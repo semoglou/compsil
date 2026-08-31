@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="compsil",
-    version="0.1.0",
+    version="0.1.1",
     author="Aggelos Semoglou",
     author_email="a.semoglou@outlook.gr",
     description="CompSil: Composite Silhouette for Cluster-Count Selection",
