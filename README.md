@@ -345,7 +345,7 @@ This project is licensed under the [MIT License](https://github.com/semoglou/com
 
 ## Links
 - Published paper: [SPRINGER ECML PKDD](https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38)
-- DOI: [https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38](https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38)
+- DOI: [10.1007/978-3-032-37654-1_38](https://doi.org/10.1007/978-3-032-37654-1_38)
 - Preprint: [arXiv:2604.13816](https://arxiv.org/abs/2604.13816)
 - Package: [PyPI](https://pypi.org/project/compsil/)
 - Presentation: [ECML PKDD 2026](https://github.com/semoglou/compsil/blob/main/supplementary%20material/presentation.pdf)
