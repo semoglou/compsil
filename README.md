@@ -5,7 +5,7 @@
   <a href="https://pypi.org/project/compsil/"><img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python 3.9+"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="License: MIT"></a>&nbsp;&nbsp;
   <a href="https://pepy.tech/project/compsil"><img src="https://pepy.tech/badge/compsil" alt="Downloads"></a>&nbsp;&nbsp;
-  <a href="#"><img src="https://img.shields.io/badge/ECML%20PKDD-2026-green" alt="ECML PKDD 2026"></a>
+  <a href="https://doi.org/10.1007/978-3-032-37654-1_38"><img src="https://img.shields.io/badge/DOI-10.1007/978-3-032-37654-1_38-green" alt="DOI"></a>
 </p>
 
 <table>
