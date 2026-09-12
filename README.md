@@ -96,16 +96,22 @@ CompSil enables:
 
 If you find this work useful, please consider citing:
 
-Semoglou, A., Likas, A., & Pavlopoulos, J. (2026). Composite Silhouette.  
+Semoglou, A., Likas, A., & Pavlopoulos, J. (2027). Composite Silhouette. In *Machine Learning and Knowledge Discovery in Databases. Research Track* (pp. 661–678). Springer Nature Switzerland.
 
-Accepted at *ECML PKDD 2026*.
+Presented at *ECML PKDD 2026*.
 
 ```bibtex
-@inproceedings{semoglou2026composite,
-  title     = {Composite Silhouette},
+@InProceedings{10.1007/978-3-032-37654-1_38,
   author    = {Semoglou, Aggelos and Likas, Aristidis and Pavlopoulos, John},
-  booktitle = {Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases},
-  year      = {2026}
+  editor    = {Ceci, Michelangelo and Kocev, Dragi and Monreale, Anna and Vens, Celine and Flach, Peter and Manco, Giuseppe and Spiliopoulou, Myra and Masciari, Elio},
+  title     = {Composite Silhouette},
+  booktitle = {Machine Learning and Knowledge Discovery in Databases. Research Track},
+  year      = {2027},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {661--678},
+  isbn      = {978-3-032-37654-1},
+  doi       = {10.1007/978-3-032-37654-1_38}
 }
 ```
 
